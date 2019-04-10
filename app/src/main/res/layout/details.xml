@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:scrollbars="none"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <ImageView
+            android:id="@+id/img_del"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/trii" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:src="@drawable/ic_chevron_left_black_24dp"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_margin="14dp"
+            android:src="@drawable/ic_favorite_border_black_24dp"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txt_del_tiltle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/custom"
+            android:text="Kerala"
+            android:textColor="@color/blue"
+            android:textSize="20sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/img_del" />
+
+        <RatingBar
+            android:id="@+id/ratingBar"
+            style="?android:attr/ratingBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="6dp"
+            android:stepSize="4.5"
+            android:isIndicator="true"
+            android:numStars="5"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_del_tiltle" />
+
+        <Button
+            android:id="@+id/btn_direction"
+            android:layout_width="90dp"
+            android:layout_height="31dp"
+            android:layout_margin="23dp"
+            android:background="@drawable/btn_details"
+            android:elevation="5dp"
+            android:fontFamily="@font/qm"
+            android:text="Direction"
+            android:textAllCaps="false"
+            android:textColor="@color/colorPrimary"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/img_del" />
+
+        <TextView
+            android:id="@+id/head_tile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/custom"
+            android:padding="10dp"
+            android:text="Here are some of the best places to vist in Kerala"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            app:layout_constraintLeft_toLeftOf="@+id/ratingBar"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ratingBar" />
+
+        <TextView
+            android:id="@+id/long_del"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:fontFamily="@font/qm"
+            android:lineSpacingExtra="6dp"
+            android:text="@string/lorem"
+            android:textColor="@color/colorAccent"
+            android:textSize="16sp"
+            app:layout_constraintLeft_toLeftOf="@+id/ratingBar"
+            app:layout_constraintTop_toBottomOf="@+id/head_tile" />
+
+        <TextView
+            android:id="@+id/head_tile_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/custom"
+            android:padding="10dp"
+
+            android:text="Best Water Sport Activity in Kerala"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:layout_marginLeft="10dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/long_del" />
+
+        <HorizontalScrollView
+            android:id="@+id/third_scrool"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:scrollbars="none"
+            app:layout_constraintTop_toBottomOf="@+id/head_tile_2">
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/con_4"
+                    android:layout_width="140dp"
+                    android:layout_height="200dp"
+                    android:layout_marginLeft="12dp"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/bg_third"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/trii"
+                    app:layout_constraintLeft_toLeftOf="parent" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:fontFamily="@font/qb"
+                    android:gravity="bottom"
+                    android:padding="16dp"
+                    android:text="Vietnam"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="19sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent" />
+
+                <ImageView
+                    android:id="@+id/con_5"
+                    android:layout_width="140dp"
+                    android:layout_height="200dp"
+                    android:layout_marginLeft="16dp"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/bg_third"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/trii"
+                    app:layout_constraintLeft_toRightOf="@+id/con_4" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:fontFamily="@font/qb"
+                    android:gravity="bottom"
+                    android:padding="16dp"
+                    android:text="Kerala"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="19sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toRightOf="@id/con_4" />
+
+                <ImageView
+                    android:id="@+id/con_6"
+                    android:layout_width="140dp"
+                    android:layout_height="200dp"
+                    android:layout_marginLeft="16dp"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/bg_third"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/trii"
+                    app:layout_constraintLeft_toRightOf="@+id/con_5" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:fontFamily="@font/qb"
+                    android:gravity="bottom"
+                    android:padding="16dp"
+                    android:text="Kerala"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="19sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toRightOf="@id/con_5" />
+            </android.support.constraint.ConstraintLayout>
+
+        </HorizontalScrollView>
+
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>
